@@ -7,8 +7,7 @@ echo "Enter hostname :"
 read hostname
 echo "Hostname = " $hostname
 hostnamectl set-hostname testbartexs.barterss.com
-IP = $(hostname -I)
-echo $IP " " $hostname >> /etc/hosts
+ip = $(hostname -I)
+echo $ip " " $hostname >> /etc/hosts
 apt update
 apt upgrade
-reboot
